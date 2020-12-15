@@ -18,7 +18,7 @@ function processFirstItem(stringList, callback) {
 }
 console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
 
-let h;
+
 
 // ⭐️ Example Challenge END ⭐️
 
@@ -30,8 +30,9 @@ let h;
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  
+  counter 1 has a nested function that returns count and counter 2 simply returns a count.
   2. Which of the two uses a closure? How can you tell?
+  counter one has a closure because the count variable in the parent function "counter maker" is implemented in the child function "counter".
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
@@ -64,8 +65,9 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
+function inning(){
+    let inningTracker = Math.ceil(Math.random() * 1);
+    return inningTracker;
 }
 
 
